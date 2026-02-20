@@ -1,7 +1,4 @@
 def main():
-    # Inicialização das variáveis
-    # Em Python, usamos float('inf') e float('-inf') para representar valores 
-    # máximos e mínimos infinitos, equivalentes a Double.MAX_VALUE e MIN_VALUE neste contexto.
     maior_altura = float('-inf')
     menor_altura = float('inf')
 
@@ -9,15 +6,12 @@ def main():
     qtd_homens = 0
     soma_homens = 0.0
 
-    # Loop para 15 pessoas
     for i in range(15):
         print(f"Informe a altura da pessoa número: {i + 1}")
         try:
             altura = float(input())
         except ValueError:
             print("Erro: Digite um número válido para a altura.")
-            # Em uma implementação robusta, você poderia decrementar i para repetir a iteração
-            # Mas para manter a lógica idêntica ao Java, assumimos entrada válida ou encerramos.
             return 
 
         genero_valido = ' '
